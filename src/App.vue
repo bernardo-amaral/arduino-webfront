@@ -5,14 +5,19 @@
     </md-toolbar>
     
     <md-content>
-        Your content here
+        <HeaderBar msg="Welcome to Your Vue.js App"/>
     </md-content>
   </div>
 </template>
 
 <script>
+  import HeaderBar from './components/HeaderBar.vue'
+
   export default {
     name: 'App',
+    components: {
+      HeaderBar
+    }
   }
 </script>
 
