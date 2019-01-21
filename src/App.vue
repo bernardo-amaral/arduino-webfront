@@ -1,28 +1,7 @@
 <template>
-  <div>
-    <md-toolbar class="md-primary">
-        <h1 class="md-title">Vue Material</h1>
-    </md-toolbar>
-    
-    <md-content>
-        <HeaderBar msg="Welcome to Your Vue.js App"/>
-    </md-content>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script>
-  import HeaderBar from './components/HeaderBar.vue'
-
-  export default {
-    name: 'App',
-    components: {
-      HeaderBar
-    }
-  }
+export default {};
 </script>
-
-<style lang="scss">
-.md-content {
-  padding: 16px;
-}
-</style>
