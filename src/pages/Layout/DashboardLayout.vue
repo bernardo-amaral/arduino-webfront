@@ -24,10 +24,6 @@
         <md-icon>bubble_chart</md-icon>
         <p>Icons</p>
       </sidebar-link>
-      <sidebar-link to="/maps">
-        <md-icon>location_on</md-icon>
-        <p>Maps</p>
-      </sidebar-link>
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>
         <p>Notifications</p>
@@ -54,11 +50,11 @@ import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
 
 export default {
-  components: {
-    TopNavbar,
-    DashboardContent,
-    ContentFooter,
-    MobileMenu
-  }
+    components: {
+        TopNavbar,
+        DashboardContent,
+        ContentFooter,
+        MobileMenu
+    }
 };
 </script>

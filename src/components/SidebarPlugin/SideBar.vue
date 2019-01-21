@@ -27,57 +27,64 @@
 import SidebarLink from "./SidebarLink.vue";
 
 export default {
-  components: {
-    SidebarLink
-  },
-  props: {
-    title: {
-      type: String,
-      default: "Vue MD"
+    components: {
+        SidebarLink
     },
-    backgroundImage: {
-      type: String,
-      default: require("@/assets/img/sidebar-2.jpg")
+    props: {
+        title: {
+            type: String,
+            default: "Vue MD"
+        },
+        backgroundImage: {
+            type: String,
+            default: require("@/assets/img/sidebar-2.jpg")
+        },
+        imgLogo: {
+            type: String,
+            default: require("@/assets/img/vue-logo.png")
+        },
+        activeColor: {
+            type: String,
+            default: "green",
+            validator: value => {
+                let acceptedValues = [
+                    "",
+                    "purple",
+                    "blue",
+                    "green",
+                    "orange",
+                    "red"
+                ];
+                return acceptedValues.indexOf(value) !== -1;
+            }
+        },
+        sidebarLinks: {
+            type: Array,
+            default: () => []
+        },
+        autoClose: {
+            type: Boolean,
+            default: true
+        }
     },
-    imgLogo: {
-      type: String,
-      default: require("@/assets/img/vue-logo.png")
+    provide() {
+        return {
+            autoClose: this.autoClose
+        };
     },
-    activeColor: {
-      type: String,
-      default: "green",
-      validator: value => {
-        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
-        return acceptedValues.indexOf(value) !== -1;
-      }
-    },
-    sidebarLinks: {
-      type: Array,
-      default: () => []
-    },
-    autoClose: {
-      type: Boolean,
-      default: true
+    computed: {
+        sidebarStyle() {
+            return {
+                backgroundImage: `url(${this.backgroundImage})`
+            };
+        }
     }
-  },
-  provide() {
-    return {
-      autoClose: this.autoClose
-    };
-  },
-  computed: {
-    sidebarStyle() {
-      return {
-        backgroundImage: `url(${this.backgroundImage})`
-      };
-    }
-  }
 };
 </script>
 <style>
 @media screen and (min-width: 991px) {
-  .nav-mobile-menu {
-    display: none;
-  }
+    .nav-mobile-menu {
+        display: none;
+    }
 }
 </style>

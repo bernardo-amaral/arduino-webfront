@@ -13,23 +13,23 @@
 </template>
 <script>
 export default {
-  name: "drop-down",
-  props: {
-    title: String,
-    icon: String
-  },
-  data() {
-    return {
-      isOpen: false
-    };
-  },
-  methods: {
-    toggleDropDown() {
-      this.isOpen = !this.isOpen;
+    name: "drop-down",
+    props: {
+        title: String,
+        icon: String
     },
-    closeDropDown() {
-      this.isOpen = false;
+    data() {
+        return {
+            isOpen: false
+        };
+    },
+    methods: {
+        toggleDropDown() {
+            this.isOpen = !this.isOpen;
+        },
+        closeDropDown() {
+            this.isOpen = false;
+        }
     }
-  }
 };
 </script>

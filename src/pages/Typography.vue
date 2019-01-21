@@ -104,11 +104,11 @@
 
 <script>
 export default {
-  props: {
-    dataBackgroundColor: {
-      type: String,
-      default: ""
+    props: {
+        dataBackgroundColor: {
+            type: String,
+            default: ""
+        }
     }
-  }
 };
 </script>

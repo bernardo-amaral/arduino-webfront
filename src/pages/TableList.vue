@@ -32,9 +32,9 @@
 import { SimpleTable, OrderedTable } from "@/components";
 
 export default {
-  components: {
-    OrderedTable,
-    SimpleTable
-  }
+    components: {
+        OrderedTable,
+        SimpleTable
+    }
 };
 </script>

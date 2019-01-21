@@ -118,23 +118,21 @@
 
 <script>
 import {
-  StatsCard,
-  NavTabsCard,
-  NavTabsTable,
-  OrderedTable
-} from "@/components";
-
-export default {
-  components: {
     StatsCard,
     NavTabsCard,
     NavTabsTable,
     OrderedTable
-  },
-  data() {
-    return {
+} from "@/components";
 
-    };
-  }
+export default {
+    components: {
+        StatsCard,
+        NavTabsCard,
+        NavTabsTable,
+        OrderedTable
+    },
+    data() {
+        return {};
+    }
 };
 </script>

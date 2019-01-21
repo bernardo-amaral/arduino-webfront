@@ -18,34 +18,34 @@
 <script>
 import Notification from "./Notification.vue";
 export default {
-  components: {
-    Notification
-  },
-  data() {
-    return {
-      notifications: this.$notifications.state
-    };
-  },
-  methods: {
-    removeNotification(timestamp) {
-      this.$notifications.removeNotification(timestamp);
+    components: {
+        Notification
+    },
+    data() {
+        return {
+            notifications: this.$notifications.state
+        };
+    },
+    methods: {
+        removeNotification(timestamp) {
+            this.$notifications.removeNotification(timestamp);
+        }
     }
-  }
 };
 </script>
 <style lang="scss">
 .list-move {
-  transition: transform 0.3s, opacity 0.4s;
+    transition: transform 0.3s, opacity 0.4s;
 }
 .list-item {
-  display: inline-block;
-  margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 .list-enter-active,
 .list-leave-active {
-  transition: opacity 0.4s;
+    transition: opacity 0.4s;
 }
 .list-enter, .list-leave-to  /* .list-leave-active for <2.1.8 */ {
-  opacity: 0;
+    opacity: 0;
 }
 </style>

@@ -19,9 +19,9 @@
 import { EditProfileForm, UserCard } from "@/pages";
 
 export default {
-  components: {
-    EditProfileForm,
-    UserCard
-  }
+    components: {
+        EditProfileForm,
+        UserCard
+    }
 };
 </script>

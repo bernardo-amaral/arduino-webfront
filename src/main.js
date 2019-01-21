@@ -15,8 +15,8 @@ import Chartist from "chartist";
 
 // configure router
 const router = new VueRouter({
-  routes,
-  linkExactActiveClass: "nav-item active"
+    routes,
+    linkExactActiveClass: "nav-item active"
 });
 
 Vue.use(VueRouter);
@@ -28,10 +28,10 @@ Vue.use(Notifications);
 Vue.prototype.$Chartist = Chartist;
 
 new Vue({
-  el: "#app",
-  render: h => h(App),
-  router,
-  data: {
-    Chartist: Chartist
-  }
+    el: "#app",
+    render: h => h(App),
+    router,
+    data: {
+        Chartist: Chartist
+    }
 });
