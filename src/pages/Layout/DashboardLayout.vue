@@ -2,13 +2,13 @@
   <div class="wrapper" :class="{'nav-open': $sidebar.showSidebar}">
     <notifications></notifications>
 
-    <side-bar>
+    <side-bar title="teste" activeColor="green" backgroundImage="" sidebarStyle="">
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
-      <sidebar-link to="/user">
+      <!-- <sidebar-link to="/user">
         <md-icon>person</md-icon>
         <p>User Profile</p>
       </sidebar-link>
@@ -23,10 +23,10 @@
       <sidebar-link to="/icons">
         <md-icon>bubble_chart</md-icon>
         <p>Icons</p>
-      </sidebar-link>
-      <sidebar-link to="/notifications">
-        <md-icon>notifications</md-icon>
-        <p>Notifications</p>
+      </sidebar-link> -->
+      <sidebar-link to="/table">
+        <md-icon>library_books</md-icon>
+        <p>Logs</p>
       </sidebar-link>
     </side-bar>
 

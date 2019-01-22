@@ -20,6 +20,13 @@ export default {
         dataBackgroundColor: {
             type: String,
             default: ""
+        },
+        dataAlignment: {
+            type: String,
+            default: "left",
+            validator: value => {
+                return ["left", "right", "mid-center"].indexOf(value) !== -1;
+            }
         }
     }
 };

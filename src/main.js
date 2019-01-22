@@ -19,6 +19,11 @@ const router = new VueRouter({
     linkExactActiveClass: "nav-item active"
 });
 
+router.beforeEach((to, from, next) => {
+    document.title = "Arduino Remote Dashboard";
+    next();
+});
+
 Vue.use(VueRouter);
 Vue.use(MaterialDashboard);
 Vue.use(GlobalComponents);
